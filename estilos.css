@@ -1,0 +1,53 @@
+/* estilos.css */
+/* Hoja de estilos para una galería de imágenes con diseño moderno y responsivo */
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente clara y legible */
+    margin: 20px;
+    /* Espacio alrededor del contenido */
+    background-color: #f4f4f4;
+    /* Color de fondo gris claro */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    color: #333;
+    /* Color gris oscuro para buen contraste */
+}
+
+/* Contenedor de la galería de imágenes */
+.galeria {
+    display: grid;
+    /* Activa el sistema de rejilla */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Columnas flexibles y adaptables */
+    gap: 15px;
+    /* Espacio entre las imágenes */
+    padding: 20px;
+    /* Espacio interno alrededor de la galería */
+}
+
+/* Estilos para cada imagen dentro de la galería */
+.galeria img {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    height: 200px;
+    /* Altura fija para mantener uniformidad */
+    object-fit: cover;
+    /* Recorta la imagen sin deformarla */
+    border-radius: 8px;
+    /* Bordes redondeados para estética moderna */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra suave para dar profundidad */
+    transition: transform 0.3s ease;
+    /* Animación suave al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre la imagen */
+.galeria img:hover {
+    transform: scale(1.05);
+    /* Agranda ligeramente la imagen */
+}
